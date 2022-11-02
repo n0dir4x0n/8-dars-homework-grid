@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: sans-serif;
+}
+h2 {
+    text-align: center;
+    text-transform: capitalize;
+    color: #0f1629;
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 50px;
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 50px 300px 100px 100px 100px;
+  grid-template-areas: "header   menu  menu   menu" "hero     hero  hero   hero" "main     main  bosh   image" "main     main  bosh   extra" "banner  banner banner  banner";
+}
+
+header {
+  background-color: #0f1629;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-menu {
+  background-color: #ef3d4d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-area: menu;
+}
+
+.container-hero {
+  background-color: #4c86c6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-area: hero;
+}
+
+main {
+  background-color: #24344b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-area: main;
+}
+
+.container-image {
+  background-color: #c1e4e6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-area: image;
+}
+
+.container-extra {
+  background-color: #4dbd97;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-area: extra;
+}
+
+.container-banner {
+  background-color: #fed269;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-area: banner;
+}
+
+@media (max-width: 1920px) {
+  .container {
+    width: 1260px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 1280px) {
+  .container {
+    width: 748px;
+    margin: 0 auto;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 150px;
+    grid-template-rows: 45px 125px 125px 80px 80px;
+    grid-template-areas: "header   header  header" "hero     hero  hero" "menu     main  main" "menu     banner  banner" "menu  extra image";
+  }
+  header {
+    background-color: #0f1629;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: header;
+  }
+  .container-menu {
+    background-color: #ef3d4d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: menu;
+    grid-template-columns: 50px;
+  }
+  .container-hero {
+    background-color: #4c86c6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: hero;
+  }
+  main {
+    background-color: #24344b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: main;
+  }
+  .container-image {
+    background-color: #c1e4e6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: image;
+  }
+  .container-extra {
+    background-color: #4dbd97;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: extra;
+  }
+  .container-banner {
+    background-color: #fed269;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: banner;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    width: 355px;
+    margin: 0 auto;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 45px 45px 100px 100px 80px 60px 60px;
+    grid-template-areas: "header" "menu" "hero" "main" "banner" "extra" "image";
+  }
+  header {
+    background-color: #0f1629;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: header;
+  }
+  .container-menu {
+    background-color: #ef3d4d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: menu;
+    grid-template-columns: 50px;
+  }
+  .container-hero {
+    background-color: #4c86c6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: hero;
+  }
+  main {
+    background-color: #24344b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: main;
+  }
+  .container-image {
+    background-color: #c1e4e6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: image;
+  }
+  .container-extra {
+    background-color: #4dbd97;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: extra;
+  }
+  .container-banner {
+    background-color: #fed269;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: banner;
+  }
+}
